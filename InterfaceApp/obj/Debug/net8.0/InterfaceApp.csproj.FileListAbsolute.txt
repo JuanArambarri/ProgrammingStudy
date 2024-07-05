@@ -1,0 +1,14 @@
+D:\Bau\ProgrammingStudy\InterfaceApp\bin\Debug\net8.0\InterfaceApp.exe
+D:\Bau\ProgrammingStudy\InterfaceApp\bin\Debug\net8.0\InterfaceApp.deps.json
+D:\Bau\ProgrammingStudy\InterfaceApp\bin\Debug\net8.0\InterfaceApp.runtimeconfig.json
+D:\Bau\ProgrammingStudy\InterfaceApp\bin\Debug\net8.0\InterfaceApp.dll
+D:\Bau\ProgrammingStudy\InterfaceApp\bin\Debug\net8.0\InterfaceApp.pdb
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.AssemblyInfoInputs.cache
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.AssemblyInfo.cs
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.csproj.CoreCompileInputs.cache
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.dll
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\refint\InterfaceApp.dll
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.pdb
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.genruntimeconfig.cache
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\ref\InterfaceApp.dll
