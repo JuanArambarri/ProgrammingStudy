@@ -1,0 +1,14 @@
+D:\Bau\Programming\BankApp\bin\Debug\net8.0\BankApp.exe
+D:\Bau\Programming\BankApp\bin\Debug\net8.0\BankApp.deps.json
+D:\Bau\Programming\BankApp\bin\Debug\net8.0\BankApp.runtimeconfig.json
+D:\Bau\Programming\BankApp\bin\Debug\net8.0\BankApp.dll
+D:\Bau\Programming\BankApp\bin\Debug\net8.0\BankApp.pdb
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\BankApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\BankApp.AssemblyInfoInputs.cache
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\BankApp.AssemblyInfo.cs
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\BankApp.csproj.CoreCompileInputs.cache
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\BankApp.dll
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\refint\BankApp.dll
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\BankApp.pdb
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\BankApp.genruntimeconfig.cache
+D:\Bau\Programming\BankApp\obj\Debug\net8.0\ref\BankApp.dll

@@ -1,0 +1,15 @@
+D:\Bau\Programming\Projects\HelloWorldNew\bin\Debug\net8.0\HelloWorldNew.exe
+D:\Bau\Programming\Projects\HelloWorldNew\bin\Debug\net8.0\HelloWorldNew.deps.json
+D:\Bau\Programming\Projects\HelloWorldNew\bin\Debug\net8.0\HelloWorldNew.runtimeconfig.json
+D:\Bau\Programming\Projects\HelloWorldNew\bin\Debug\net8.0\HelloWorldNew.dll
+D:\Bau\Programming\Projects\HelloWorldNew\bin\Debug\net8.0\HelloWorldNew.pdb
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.AssemblyInfoInputs.cache
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.AssemblyInfo.cs
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.csproj.CoreCompileInputs.cache
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.sourcelink.json
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.dll
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\refint\HelloWorldNew.dll
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.pdb
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\HelloWorldNew.genruntimeconfig.cache
+D:\Bau\Programming\Projects\HelloWorldNew\obj\Debug\net8.0\ref\HelloWorldNew.dll
