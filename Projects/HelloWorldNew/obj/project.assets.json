@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bau\\Programming\\Projects\\HelloWorldNew\\HelloWorldNew.csproj",
+      "projectUniqueName": "D:\\Bau\\ProgrammingStudy\\Projects\\HelloWorldNew\\HelloWorldNew.csproj",
       "projectName": "HelloWorldNew",
-      "projectPath": "D:\\Bau\\Programming\\Projects\\HelloWorldNew\\HelloWorldNew.csproj",
+      "projectPath": "D:\\Bau\\ProgrammingStudy\\Projects\\HelloWorldNew\\HelloWorldNew.csproj",
       "packagesPath": "C:\\Users\\bauli\\.nuget\\packages\\",
-      "outputPath": "D:\\Bau\\Programming\\Projects\\HelloWorldNew\\obj\\",
+      "outputPath": "D:\\Bau\\ProgrammingStudy\\Projects\\HelloWorldNew\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bauli\\AppData\\Roaming\\NuGet\\NuGet.Config",

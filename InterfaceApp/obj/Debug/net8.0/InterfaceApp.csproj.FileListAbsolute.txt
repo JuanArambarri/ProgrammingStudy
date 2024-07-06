@@ -12,3 +12,4 @@ D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\refint\InterfaceApp.dll
 D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.pdb
 D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.genruntimeconfig.cache
 D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\ref\InterfaceApp.dll
+D:\Bau\ProgrammingStudy\InterfaceApp\obj\Debug\net8.0\InterfaceApp.sourcelink.json

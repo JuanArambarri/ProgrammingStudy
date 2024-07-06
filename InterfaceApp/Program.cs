@@ -2,8 +2,52 @@
 
 class Program
 {
+    public interface IPaymentProcesser
+    {
+        void ProcessPayment(decimal amount);
+        
+    }
+
+    public class CreditCardProcessor : IPaymentProcesser
+    {
+        public void ProcessPayment(decimal amount)
+        {
+            Console.WriteLine("Processing payment of: $" +amount);
+        }
+    }
+    public class PaypalProcessor : IPaymentProcesser
+    {
+        public void ProcessPayment(decimal amount)
+        {
+            Console.WriteLine("Processing Paypal payment of: $" +amount);
+        }
+    }
+
+    public class PaymentService
+    {
+        private readonly IPaymentProcesser _processor;
+        //takes any type of payment processor thanks to the interface IPayment...
+        public PaymentService(IPaymentProcesser processor)
+        {
+            _processor = processor;
+        }
+
+        public void ProccessOrderPayment(decimal amount)
+        {
+            _processor.ProcessPayment(amount);
+        }
+    }
+    
     static void Main(string[] args)
     {
+        //using interface to create to different classes
+        IPaymentProcesser creditCardProcessor = new CreditCardProcessor();
+        PaymentService paymentService = new PaymentService(creditCardProcessor);
+        paymentService.ProccessOrderPayment(100m);
+        IPaymentProcesser paypalProcessor = new PaypalProcessor();
+        paymentService = new PaymentService(paypalProcessor);
+        paymentService.ProccessOrderPayment(200m);
+        
         Dog aDog = new Dog("aki");
         aDog.AnimalTag();
         aDog.MakeSound();
