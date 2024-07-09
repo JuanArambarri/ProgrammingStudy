@@ -40,6 +40,17 @@ class Program
     
     static void Main(string[] args)
     {
+        // //how to create a text file, each time the code is run, it adds the contents to log.txt
+        // //Used for logging errors for users in order to have a way to see what problem is being generated.
+        // string directoryPath = @"D:\Bau\ProgrammingStudy\InterfaceApp\Logs";
+        // string filePath = Path.Combine(directoryPath, "log.txt");
+        // string message = "Log file has been initiated \n";
+        // if (!Directory.Exists(directoryPath))
+        // {
+        //     Directory.CreateDirectory(directoryPath);
+        // }
+        // File.AppendAllText(filePath,message);
+        
         //using interface to create to different classes
         IPaymentProcesser creditCardProcessor = new CreditCardProcessor();
         PaymentService paymentService = new PaymentService(creditCardProcessor);
