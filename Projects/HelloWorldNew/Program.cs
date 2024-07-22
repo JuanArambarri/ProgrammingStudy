@@ -1,43 +1,37 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 using System.Text;
 using System.Threading.Channels;
 
 namespace HelloWorld
 {
- public class Exercise
- {
-  public static double ConvertToRadians(double angle)
-  {
-   return (Math.PI / 180) * angle;
-  }
- }
-
  class Program
  {
   // www.dofactory.com/reference/csharp-coding-standards
   static void Main(string[] args)
   {
-   string line = Console.ReadLine();
-   bool wronginput = (int.TryParse(line, out int input) && input<=0 || input<=180);
-   if (!wronginput)
+   DateTime dateTime = new DateTime();
+   Console.WriteLine("Write a date in this format: yyyy-mm-dd");
+   DateTime now = DateTime.Now;
+   string input = Console.ReadLine();
+   if (DateTime.TryParse(input, out dateTime))
    {
-    while((int.TryParse(line, out int number) && input<=0 || input<=180)){
-     Console.WriteLine("Check the input!");
-     line = Console.ReadLine();
-    }
+    Console.WriteLine(dateTime);
+    TimeSpan daysPassed = now.Subtract(dateTime);
+    Console.WriteLine("Days passed since {0}", daysPassed.Days);
+   }else{
+    Console.WriteLine("Wrong input");
    }
+   Console.WriteLine("Current day of the Week:"+DateTime.Today.DayOfWeek);
    
-   int num = int.Parse(line);
-   double cosradian = Exercise.ConvertToRadians(Math.Cos(num));
-   double sinradian = Exercise.ConvertToRadians(Math.Sin(num));
-   double tanradian = Exercise.ConvertToRadians(Math.Tan(num));
-   Console.WriteLine("Cos ={0}",cosradian);
-   Console.WriteLine("Cos ={0}",sinradian);
-   Console.WriteLine("Cos ={0}",tanradian);
-   
-   
-   
+   static DateTime GetTomorrow()
+   {
+    return DateTime.Today.AddDays(1);
+   }
+
+   Console.WriteLine("Tomorrow is: {0}", GetTomorrow());
    
    
    //inheritance
