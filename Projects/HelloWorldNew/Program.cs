@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 using System.Text;
 using System.Threading.Channels;
 
@@ -10,6 +12,28 @@ namespace HelloWorld
   // www.dofactory.com/reference/csharp-coding-standards
   static void Main(string[] args)
   {
+   DateTime dateTime = new DateTime();
+   Console.WriteLine("Write a date in this format: yyyy-mm-dd");
+   DateTime now = DateTime.Now;
+   string input = Console.ReadLine();
+   if (DateTime.TryParse(input, out dateTime))
+   {
+    Console.WriteLine(dateTime);
+    TimeSpan daysPassed = now.Subtract(dateTime);
+    Console.WriteLine("Days passed since {0}", daysPassed.Days);
+   }else{
+    Console.WriteLine("Wrong input");
+   }
+   Console.WriteLine("Current day of the Week:"+DateTime.Today.DayOfWeek);
+   
+   static DateTime GetTomorrow()
+   {
+    return DateTime.Today.AddDays(1);
+   }
+
+   Console.WriteLine("Tomorrow is: {0}", GetTomorrow());
+   
+   
    //inheritance
    Manager carl = new Manager("Carl", 45, "Manager", 123123, 7);
    carl.DisplayManagerInfo();
