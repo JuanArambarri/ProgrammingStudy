@@ -120,6 +120,33 @@ public class Challenges
         string friendName = Console.ReadLine();
         Console.WriteLine("My bestest friend is: " + friendName);
     }
+
+    public static void DateRelatedInformation()
+    {
+        DateTime dateTime = new DateTime();
+        Console.WriteLine("Write a date in this format: yyyy-mm-dd");
+        string input = Console.ReadLine();
+        DateTime now = DateTime.Now;
+        if (DateTime.TryParse(input, out dateTime))
+        {
+            Console.WriteLine(dateTime);
+            TimeSpan daysPassed = now.Subtract(dateTime);
+            Console.WriteLine("Days passed since {0}", daysPassed.Days);
+        }else{
+            Console.WriteLine("Wrong input");
+        }
+
+        Console.WriteLine("-----------------------------------------------------");
+        Console.WriteLine("Current day of the Week:"+DateTime.Today.DayOfWeek);
+        Console.WriteLine("-----------------------------------------------------");
+        static DateTime GetTomorrow()
+        {
+            return DateTime.Today.AddDays(1);
+        }
+
+        Console.WriteLine("Tomorrow is: {0}", GetTomorrow());
+
+    }
     
     public static void UnaryOperators()
     {

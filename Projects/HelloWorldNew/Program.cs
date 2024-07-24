@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
 using System.Numerics;
 using System.Text;
 using System.Threading.Channels;
@@ -9,30 +10,22 @@ namespace HelloWorld
 {
  class Program
  {
+  public delegate bool FilterDelegate(Person p); //Delegate which takes a person object and returns a bool
+  
   // www.dofactory.com/reference/csharp-coding-standards
   static void Main(string[] args)
   {
-   DateTime dateTime = new DateTime();
-   Console.WriteLine("Write a date in this format: yyyy-mm-dd");
-   DateTime now = DateTime.Now;
-   string input = Console.ReadLine();
-   if (DateTime.TryParse(input, out dateTime))
-   {
-    Console.WriteLine(dateTime);
-    TimeSpan daysPassed = now.Subtract(dateTime);
-    Console.WriteLine("Days passed since {0}", daysPassed.Days);
-   }else{
-    Console.WriteLine("Wrong input");
-   }
-   Console.WriteLine("Current day of the Week:"+DateTime.Today.DayOfWeek);
-   
-   static DateTime GetTomorrow()
-   {
-    return DateTime.Today.AddDays(1);
-   }
+   //Challenges.DateRelatedInformation();
+   //Delegates
+   Person p1 = new Person("Aiden", 41 );
+   Person p2 = new Person("Sif", 69);
+   Person p3 = new Person("Walter", 12);
+   Person p4 = new Person("Anatoli", 25);
 
-   Console.WriteLine("Tomorrow is: {0}", GetTomorrow());
+   List<Person> people = new List<Person>() { p1, p2, p3, p4 };
    
+   DisplayPeople("Kids", people, IsMinor);
+   DisplayPeople("Senior",people,IsSenior);
    
    //inheritance
    Manager carl = new Manager("Carl", 45, "Manager", 123123, 7);
@@ -108,7 +101,6 @@ namespace HelloWorld
    {
     Name = name;
     Age = age;
-    Console.WriteLine("Person constructor called");
    }
 
    public void DisplayPersonInfo()
@@ -127,7 +119,31 @@ namespace HelloWorld
    }
   }
 
-
+  static void DisplayPeople(string title, List<Person> people, FilterDelegate filter)
+  {
+   Console.WriteLine(title);
+   foreach (Person p in people)
+   {
+    if (filter(p))
+    {
+     Console.WriteLine("{0}, {1} years old.", p.Name, p.Age);
+    }
+   }
+  }
+  //Filters ----------------------------------------------------
+  static bool IsMinor(Person p)
+  {
+   return p.Age < 18;
+  }
+  static bool IsAdult(Person p)
+  {
+   return p.Age >= 18;
+  }
+  static bool IsSenior(Person p)
+  {
+   return p.Age >= 65;
+  }
+//---------------------------------------------------
   public class Employees : Person
   {
    public string JobTitle { get; private set; }
